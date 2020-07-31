@@ -1,19 +1,20 @@
-import glob, os
+import glob
+import os
 
 # put your own path here
 dataset_path = '/home/thecaffeinedev/YoloV3-Custom-Object-Detection/training/images'
 
 # Percentage of images to be used for the test set
-percentage_test = 30;
+percentage_test = 25
 
 # Create and/or truncate train.txt and test.txt
-file_train = open('train.txt', 'w')  
+file_train = open('train.txt', 'w')
 file_test = open('test.txt', 'w')
 
 # Populate train.txt and test.txt
-counter = 1  
-index_test = round(100 / percentage_test)  
-for pathAndFilename in glob.iglob(os.path.join(dataset_path, "*.jpg")):  
+counter = 1
+index_test = round(100 / percentage_test)
+for pathAndFilename in glob.iglob(os.path.join(dataset_path, "*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
 
     if counter == index_test+1:
