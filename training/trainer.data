@@ -1,7 +1,5 @@
-classes=4
-train= /home/thecaffeinedev/YoloV3-Custom-Object-Detection/training/train.txt # put your own path here
-valid= /home/thecaffeinedev/YoloV3-Custom-Object-Detection/training/test.txt # put your own path here
-names= /home/thecaffeinedev/YoloV3-Custom-Object-Detection/training/object.names # put your own path here
-backup= backup/
-eval=coco
-
+classes=17
+train= training/train.txt
+valid= training/test.txt
+names= training/object.names
+backup= backup

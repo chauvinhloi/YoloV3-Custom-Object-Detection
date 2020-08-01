@@ -2,7 +2,7 @@ import glob
 import os
 
 # put your own path here
-dataset_path = '/home/thecaffeinedev/YoloV3-Custom-Object-Detection/training/images'
+dataset_path = './images'
 
 # Percentage of images to be used for the test set
 percentage_test = 25
